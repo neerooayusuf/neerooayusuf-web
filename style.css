@@ -23,7 +23,7 @@ height:100px;
   cursor: pointer;
 }
 
-button1[type=button] {
+button[type=button] {
 float:right;
   text-align:center;
   position:relative;
@@ -38,20 +38,6 @@ float:right;
   cursor: pointer;
 }
 
-button2[type=button] {
-float:right;
-  text-align:center;
-  position:relative;
-  height:100px;
-  width: 40%;
-  background-color: #131313;
-  color: white;
-  padding: left;
-  margin: 8px 0;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-}
 
 input[type=submit]:hover {
   background-color: #45a049;
