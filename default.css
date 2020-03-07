@@ -1,5 +1,5 @@
 
-.outer {
+.outermostborder123 {
   display: table;
   position: absolute;
   top: 0;
@@ -8,13 +8,13 @@
   width: 100%;
 }
 
-.middle {
+.middlebox123 {
   display: table-cell;
 
   vertical-align: middle;
 }
 
-.inner {
+.innerbox123 {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
