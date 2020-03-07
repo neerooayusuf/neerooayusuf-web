@@ -17,7 +17,7 @@
 .inner {
   margin-left: auto;
   margin-right: auto;
- 
+  position: absolute;
   height:auto;
   width: 75%;
 }
