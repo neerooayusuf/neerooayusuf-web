@@ -1,0 +1,47 @@
+button[type=button] {
+   float:right;
+   text-align:center;
+   position:relative;
+   height:100px;
+   width: 19%;
+   background-color: #131313;
+   color: white;
+   padding: left:1%;
+   margin: 8px 0;
+   border: none;
+   border-radius: 15px;
+   cursor: pointer; 
+}
+
+
+button[type=button]:hover {
+  background-color: #131313;
+  color:#45a049;
+}
+
+
+div {
+  background-color: black;
+
+}
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+ 
+  height:auto;
+  width: 75%;
