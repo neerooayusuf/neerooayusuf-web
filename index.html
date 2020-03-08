@@ -1,48 +1,54 @@
-<!DOCTYPE html>
 <html>
-<title>Myusuf05</title>
-<header>
-    	<style>
-		.outermostborder123 {
-		  display: table;
-		  height: 100%;
-		  width: 100%;
-		}
-		.middlebox123 {
-		  display: table-cell;
-		  vertical-align: middle;
-		}
-		.innerbox123 {
-		  display: inline-block;
-		  margin-left: auto;
-		  margin-right: auto;
-		  height:auto;
-		}
+	<head>
+		<style>
+			button[type=button]:hover {
+  			background-color: #131313;
+  			color:#45a049;
+			}
+			.box {
+				width:100%;
+    				height:10%;
+    				position:fixed;
+    				top:35%;
+			}
+			.button {
+				height:100px; 
+				width: 19%;  
+				background-color: #131313;  
+				color: white;  
+				margin: 8px 0;
+				border: 0px ;
+				border-radius: 15px;
+				font-size:4vw;
+			}
+			body {
+				background-color: #000000;" 
+			}
+		</style>
+		</head>
+		<body>
+		<table class="box">
+			<tbody>
+				<tr>
+        				<th>
+						<button type="button" class="button" onclick="functionOne()">Myusuf05</button>
+					</th>
+				</tr>
+				<tr>
+        				<th>
+						<button type="button" class="button" onclick="functionTwo()">Notepad</button>
+					</th>
+				</tr>
+			</tbody>
+		</table>
+		<script>
+  			function functionOne() {
+    				window.location.href = "./myusuf05/index.html";
+ 	 		}
 
-	</style>
-</header>  
-<body>
-  	<div class="outermostborder123">
-		<div class="middlebox123">
-    			<div class="innerbox123">
-				<button type="button" onclick="functionOne()">1</button>
-				<br>
-				<button type="button" onclick="functionTwo()">2</button>			
-			</div>
-  		</div>
-	</div>
-  
-<script>
-
-  function functionOne() {
-    window.location.href = "./myusuf05/index.html";
-  }
-
-  function functionTwo() {
-    window.location.href = "./notepad/index.html";
-  }
-
+  			function functionTwo() {
+    				window.location.href = "./notepad/index.html";
+  			}
 </script>
-
-</body>
+	</body>
 </html>
