@@ -31,14 +31,14 @@ body {
 nav {
     grid-area: nav;
     background: black;
-    border: 2px solid #6441a5;
+    border: 2px solid #45a049;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
 #searchboxcontainer {
-    background: #6441a5;
-    border: 0px solid #6441a5;
+    background: #45a049;
+    border: 0px solid #45a049;
     grid-area: searchboxcontainer;
     border-radius: var(--main-radius);
     padding: 0px;
@@ -69,7 +69,7 @@ nav {
 
 input[type=password], select {
     display: inline-block;
-    border: 0px solid #6441a5;
+    border: 0px solid #45a049;
     border-radius: var(--main-radius);
     box-sizing: border-box;
     background-color: black
@@ -94,25 +94,25 @@ button[type=button] {
 
 
 input[type=submit]:hover {
-    background-color: #6441a5;
+    background-color: #45a049;
 }
 
 button[type=button]:hover {
     background-color: #131313;
-    color: #6441a5;
+    color: #45a049;
 }
 
 main {
     background: black;
-    border: 2px solid #6441a5;
+    border: 2px solid #45a049;
     grid-area: main;
     border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
+    padding-top: 0px;
 }
 
 #sidebar {
     background: black;
-    border: 2px solid #6441a5;
+    border: 2px solid #45a049;
     grid-area: sidebar;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -120,7 +120,7 @@ main {
 
 #content1 {
     background: black;
-    border: 2px solid #6441a5;
+    border: 2px solid #45a049;
     grid-area: content1;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -128,7 +128,7 @@ main {
 
 #content2 {
     background: black;
-    border: 2px solid #6441a5;
+    border: 2px solid #45a049;
     grid-area: content2;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -136,7 +136,7 @@ main {
 
 #content3 {
     background: black;
-    border: 2px solid #6441a5;
+    border: 2px solid #45a049;
     grid-area: content3;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -144,7 +144,7 @@ main {
 
 #content4 {
     background: black;
-    border: 2px solid #6441a5;
+    border: 2px solid #45a049;
     grid-area: content4;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -152,7 +152,7 @@ main {
 
 footer {
     background: black;
-    border: 2px solid #6441a5;
+    border: 2px solid #45a049;
     grid-area: footer;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
