@@ -4,7 +4,7 @@ input[type=password], select {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 5px solid #45a049;
+  border: 5px solid #6441a5;
   border-radius: 15px;
   box-sizing: border-box;
   background-color:black
@@ -40,12 +40,12 @@ float:right;
 
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #6441a5;
 }
 
 button[type=button]:hover {
   background-color: #131313;
-  color:#45a049;
+  color:#6441a5;
 }
 
 
