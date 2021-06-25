@@ -29,15 +29,16 @@ body {
 }
 
 nav {
-    background: black;
     grid-area: nav;
+    background: black;
     border: 2px solid #45a049;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
 #searchboxcontainer {
-    background: #18ffff;
+    background: #45a049;
+    border: 0px solid #45a049;
     grid-area: searchboxcontainer;
     border-radius: var(--main-radius);
     padding: 0px;
@@ -51,14 +52,12 @@ nav {
     grid-template-rows: 1fr;
     grid-template-areas:
         "searchtextbox gotextbox";
-    grid-gap: 1rem;
-    margin: 1rem;
+    grid-gap: 2px;
+    margin: 2px;
 }
 #searchtextbox {
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    font-size: 100px;
+    margin:0px;
+    font-size: 50px;
     color: gray;
     width:100%;
 }
@@ -68,53 +67,95 @@ nav {
     color: gray;
 }
 
+input[type=password], select {
+    display: inline-block;
+    border: 0px solid #45a049;
+    border-radius: var(--main-radius);
+    box-sizing: border-box;
+    background-color: black
+}
+
+input[type=submit] {
+    background-color: #131313;
+    color: White;
+    border: none;
+    border-radius: var(--main-radius);
+    cursor: pointer;
+    height: 100%;
+}
+
+button[type=button] {
+    background-color: #131313;
+    color: white;
+    border: none;
+    border-radius: var(--main-radius);
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+button[type=button]:hover {
+    background-color: #131313;
+    color: #45a049;
+}
+
 main {
-  background: #84ffff;
-  grid-area: main;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+    background: black;
+    border: 2px solid #45a049;
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
 }
 
 #sidebar {
-  background: #18ffff;
-  grid-area: sidebar;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+    background: black;
+    border: 2px solid #45a049;
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
 }
 
 #content1 {
-  background: #6fffd2;
-  grid-area: content1;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+    background: black;
+    border: 2px solid #45a049;
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
 }
 
 #content2 {
-  background: #64ffda;
-  grid-area: content2;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+    background: black;
+    border: 2px solid #45a049;
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
 }
 
 #content3 {
-  background: #73ffba;
-  grid-area: content3;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+    background: black;
+    border: 2px solid #45a049;
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
 }
 
 #content4 {
-  background: #73ffba;
-  grid-area: content4;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+    background: black;
+    border: 2px solid #45a049;
+    grid-area: content4;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
 }
 
 footer {
-  background: #1de9b6;
-  grid-area: footer;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+    background: black;
+    border: 2px solid #45a049;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
 }
 
 a {
