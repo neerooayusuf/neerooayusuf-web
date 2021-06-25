@@ -1,17 +1,40 @@
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Inter:400,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+   <style>
+       
+   </style>
 </head>
+<body>
+    <div class="container" >
+        <nav>Navbar</nav>
 
-<div class="container">
-  <nav>Navbar</nav>
-  <main>Main</main>
-  <div id="sidebar">Sidebar</div>
-  <div id="content1">Content1</div>
-  <div id="content2">Content2</div>
-  <div id="content3">Content3</div>
-  <div id="content4">Content4</div>
-  <footer>Footer</footer>
-</div>
 
-<a href="https://www.youtube.com/watch?v=68O6eOGAGqA">Video Tutorial</a>
+        <div id="searchboxcontainer">
+            <form onsubmit="Results()" id="searchbox">
+                <input type="password" id="searchtextbox" placeholder="Input keyword">
+                <input type="submit" id="gotextbox" value="Go">
+
+            </form>
+        </div>
+
+
+        <main>
+            <iframe src="https://player.twitch.tv/?channel=ladstream&parent=myusuf05.github.io"
+                    height="98%"
+                    width="98%"
+                    frameborder="0"
+                    scrolling="no"
+                    allowfullscreen="true"
+                    muted="false">
+            </iframe>
+
+        </main>
+        <div id="sidebar">Sidebar</div>
+        <div id="content1">Content1</div>
+        <div id="content2">Content2</div>
+        <div id="content3">Content3</div>
+        <div id="content4">Content4</div>
+        <footer>Footer</footer>
+    </div>
+</body>
