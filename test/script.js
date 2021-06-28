@@ -3,7 +3,7 @@ function functionOne() {
 }
 
 function functionTwo() {
-	window.location.href = "https://realms.gg/WuY-LoRreCo";
+	window.location.href = "minecraft://acceptRealmInvite?inviteID=WuY-LoRreCo";
 }
 
 function functionThree() {
@@ -16,3 +16,4 @@ function functionFour() {
 function functionFive() {
 	window.location.href = "./notepad";
 }
+

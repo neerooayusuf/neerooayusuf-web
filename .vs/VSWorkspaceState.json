@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
+    "",
     "\\bucky",
     "\\Fardeen",
-    "\\ResponsiveTest"
+    "\\ResponsiveTest",
+    "\\test"
   ],
+  "SelectedNode": "\\test\\index.html",
   "PreviewInSolutionExplorer": false
 }
