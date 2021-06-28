@@ -3,11 +3,16 @@
     --main-padding: 5px;
 }
 
-body {
-    font-family: "Google Sans", sans-serif;
+
+.body {
     background-color: black;
 }
-.body {
+
+.container {
+    font-family: "Google Sans", sans-serif;
+    background-color: black;
+    font-size: 15vw;
+    text-align: center;
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 3fr 1fr;
@@ -20,11 +25,12 @@ body {
         "empty1 button4 empty3"
         "empty1 button5 empty3"
         "empty4 empty4 empty4";
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
 }
+
 button[type=button]:hover {
     background-color: #131313;
     color: #45a049;
@@ -32,21 +38,28 @@ button[type=button]:hover {
 
 
 
+
 .button {
+    scroll-snap-align: start;
     height: 100%;
     width: 100%;
     background-color: #131313;
     color: white;
-    margin: 8px 0;
+    margin: 0px 0px 8px 0px;
     border: 0px;
-    border-radius: 15px;
-    font-size: 4vw;
-    text-align: center;
+    padding: 0px;
+    border-radius: 2rem;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 800;
+    font-size: 15vw;
 }
 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 2rem;
+    padding: 0px;
+    border: 0px;
 }
 body {
     background-color: #000000;
