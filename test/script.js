@@ -1,5 +1,7 @@
 function functionOne() {
-	window.location.href = "./myusuf05";
+
+	("#iframeMyusuf05").toggle();
+	
 }
 
 function functionTwo() {
