@@ -1,67 +1,135 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Time in TRIOLET</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<style type="text/css">
 
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap" rel="stylesheet">
-<style>
-
-.body {
-background-color:black;
+body {
+	margin: 0;
+	padding: 0;
+	border:none;
+	width: 100vw;
+	height: 100vh;
+background-color: black;
 }
 
-.wide {
-width; 90vw
+
+#svg {
+width:100%;
+height:100%;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 85vh;
-padding: 0px;
-border: 0px;
-margin: 0px;
-
+#go-button {
+	position:fixed;
+	width: 50px;
+	height: 50px;
+	right: 50px;
+	bottom: 50px;
+	background-color: black;
+	border-radius: 50px;
+	border: none;
+	display: block;
+	margin: 0px;
+	text-align:center;
+	box-shadow: 0px;
 }
 
-.center2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-padding: 0px;
-border: 0px;
-margin: 0px;
-
+/* webkit requires explicit width, height = 100% of sceeen */
+/* webkit also takes margin into account in full screen also - so margin should be removed (otherwise black areas will be seen) */
+#element:-webkit-full-screen {
+	width: 100%;
+	height: 100%;
+	background-color: pink;
+	margin: 0;
 }
 
-.font {
-font-family: 'Inconsolata', monospace;
-color: white;
+#element:-moz-full-screen {
+	background-color: pink;
+	margin: 0;
 }
+
+#element:-ms-fullscreen {
+	background-color: pink;
+	margin: 0;
+}
+
+/* W3C proposal that will eventually come in all browsers */
+#element:fullscreen { 
+	background-color: pink;
+	margin: 0;
+}
+
 </style>
-</head>
-<body class="body">
 
-<div class="wide">
-<div class="center">
-<a href="https://time.is/Triolet" id="time_is_link" rel="nofollow" style="font-size:36px"></a>
-<span id="Triolet_z808" style="font-size:20vw" class="font"></span>
-<script src="//widget.time.is/t.js"></script>
+</head>
+
+<body id="body">
+	<div>
+		<button id="go-button">
+<img src="./fullscreen.png" style="width:50px; height: 50px;opacity: 0.3;"/>
+
+		</button>
+	</div>
+	<iframe id="clock" src="./clock.html" style="padding: 0; margin: 0; border:none; width: 98vw; height: 98vh;"></iframe>
+</body>
+
+
+
 <script>
-time_is_widget.init({Triolet_z808:{}});
+
+/* Get into full screen */
+function GoInFullscreen(element) {
+	if(element.requestFullscreen)
+		element.requestFullscreen();
+	else if(element.mozRequestFullScreen)
+		element.mozRequestFullScreen();
+	else if(element.webkitRequestFullscreen)
+		element.webkitRequestFullscreen();
+	else if(element.msRequestFullscreen)
+		element.msRequestFullscreen();
+}
+
+/* Get out of full screen */
+function GoOutFullscreen() {
+	if(document.exitFullscreen)
+		document.exitFullscreen();
+	else if(document.mozCancelFullScreen)
+		document.mozCancelFullScreen();
+	else if(document.webkitExitFullscreen)
+		document.webkitExitFullscreen();
+	else if(document.msExitFullscreen)
+		document.msExitFullscreen();
+}
+
+/* Is currently in full screen or not */
+function IsFullScreenCurrently() {
+	var full_screen_element = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || null;
+	
+	// If no element is in full-screen
+	if(full_screen_element === null)
+		return false;
+	else
+		return true;
+}
+
+$("#go-button").on('click', function() {
+	if(IsFullScreenCurrently())
+		GoOutFullscreen();
+	else
+		GoInFullscreen($("#body").get(0));
+});
+
+$(document).on('fullscreenchange webkitfullscreenchange mozfullscreenchange MSFullscreenChange', function() {
+	if(IsFullScreenCurrently()) {
+		$("#element span").text('Full Screen Mode Enabled');
+		
+	}
+	else {
+		$("#element span").text('Full Screen Mode Disabled');
+		
+	}
+});
+
 </script>
 
-</div>
-<div class="center2">
-<iframe src="https://free.timeanddate.com/clock/i8aunxyy/n201/tlmu/fn7/fs20/fcfff/tct/pct/ftb/tt1" frameborder="0" width="323" height="30" allowtransparency="true" class="font"></iframe>
-
-</div>
-</div>
-
-</body>
 </html>
