@@ -1,0 +1,10 @@
+/* Portrait */
+@media screen and (orientation:portrait) {
+    /* Portrait styles */
+  .fontsize {
+  }
+}
+/* Landscape */
+@media screen and (orientation:landscape) {
+    /* Landscape styles */
+}
