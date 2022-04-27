@@ -16,3 +16,6 @@ function functionFour() {
 function functionFive() {
 	window.location.href = "./notepad";
 }
+function functionSix() {
+	window.location.href = "./clock";
+}
