@@ -17,10 +17,11 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
     grid-template-areas:
         "empty1 empty2 empty3"
         "empty1 button1 empty3"
+        "empty1 button6 empty3"
         "empty1 button2 empty3"
         "empty1 button3 empty3"
         "empty1 button4 empty3"
@@ -92,4 +93,6 @@ body {
 #button5 {
     grid-area: button5;
 }
-
+#button6 {
+    grid-area: button6;
+}
