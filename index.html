@@ -1,24 +1,43 @@
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-		<link rel="stylesheet" href="./styles.css">
+		<link rel="stylesheet" href="./index.css">
+        <link rel="icon" href="./icon.ico">
+
+        
 	</head>
 	<body>
-		<div id="container">
-				<div id="empty1"></div>
-				<div id="empty2"></div>
-				<div id="empty3"></div>
-				<div id="empty4"></div>
-				<button id="button1" type="button" class="button y mandatory-scroll-snapping" onclick="functionOne()"><img src=".\images\myusuf05.jpg" /></button>
-				<button id="button6" type="button" class="button y mandatory-scroll-snapping" onclick="functionSix()">
-					<iframe id="clock" src="./clock/index.html" class="clock"></iframe>
-				</button>
-				<button id="button2" type="button" class="button y mandatory-scroll-snapping" onclick="functionTwo()"><img src=".\images\minecraft.jpg" /></button>
-				<button id="button3" type="button" class="button y mandatory-scroll-snapping" onclick="functionThree()"><img src=".\images\twitch.jpg" /></button>
-				<button id="button4" type="button" class="button y mandatory-scroll-snapping" onclick="functionFour()"><img src=".\images\f1.jpg" /></button>
-				<button id="button5" type="button" class="button y mandatory-scroll-snapping" onclick="functionFive()">NOTEPAD</button>
-		</div>
-		<script src="./script.js">
-		</script>
+		<section>
+            <button id="button1" type="button" class="button" onclick="functionOne()">
+                <img src=".\images\myusuf05.jpg" />
+            </button>
+        </section>
+        <section>
+            <button id="button2" type="button" onclick="functionTwo()">
+                <iframe id="clock" class="clock" src="./clock/index.html"></iframe>
+            </button>
+        </section>
+        <section>
+            <button id="button3" type="button" onclick="functionThree()">
+                <img src=".\images\minecraft.jpg" />
+            </button>
+        </section>
+        <section>
+            <button id="button4" type="button" onclick="functionFour()">
+                <img src=".\images\twitch.jpg" />
+            </button>
+        </section>
+        <section>
+            <button id="button5" type="button" onclick="functionFive()">
+                <img src=".\images\f1.jpg" />
+            </button>
+        </section>
+        <section>
+            <button id="button6" type="button" onclick="functionSix()">
+                NOTEPAD
+            </button>
+        </section>
 	</body>
+    <script src="./script.js">
+    </script>
 </html>
