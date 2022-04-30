@@ -8,15 +8,15 @@ html {
 	scroll-snap-type: y mandatory;
 }
 body {
-    border: 0;
+    	border: 0;
 	padding: 0;
-    margin: 0;
+    	margin: 0;
 	background-color: black;
 }
 section {
 	border: 2vmax solid transparent;
 	padding: 0;
-    margin: 0;
+    	margin: 0;
 	height: 100vh;
 	scroll-snap-align: start;
 	text-align: center;
@@ -26,31 +26,32 @@ button {
 	border: 0;
 	border-radius: 3vw;
 	padding: 0;
-    margin: 0;
+    	margin: 0;
 	text-align: center;
-    background-color: #131313;
+    	background-color: #131313;
 	color: white;
 	width: 100%;
-    height: 100%;
-	font-size: calc(1rem + 3vw);
+    	height: 100%;
+	font-size: 15vw;
+    	font-weight: 900;
 }
 img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 3vw;
-    padding: 0;
-    border: 0;
-    margin: 0;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 3vw;
+	padding: 0;
+	border: 0;
+	margin: 0;
 }
 .clock {
-    padding: 0; 
-    margin: 0; 
-    border:none;
-    width: 100%; 
-    height: 100%;
+	padding: 0; 
+	margin: 0; 
+	border:none;
+	width: 100%; 
+	height: 100%;
 }
 button[type=button]:hover {
-    background-color: #131313;
-    color: #45a049;
+	background-color: #131313;
+	color: #45a049;
 }
